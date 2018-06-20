@@ -1,0 +1,46 @@
+html, body{
+	margin:0;
+	height: 100%;
+}
+#navbar{
+	background-color: #fcfcfc;
+	padding: 0;
+}
+#navbar-title{
+	color:#000;
+}
+.row{
+	width: 100%;
+}
+
+.nav-list{
+	font-weight: 200;
+	color:#573ef7;
+	display: inline-block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right:10%;
+	padding-left: 10%;
+	transition-delay: 0.09s;
+}
+
+.nav-list:hover{
+	color: white;
+	background-color:#573ef7;
+	text-decoration: none;
+}
+
+.jumbotron{
+	height: 100%;
+}
+.welcome_title{
+	font-size: 56px;
+	color: #007bff;
+	font-weight: 200;
+}
+.description_jumbotron{
+	font-size: 20px;
+}
+.container{
+	margin-top:60px;
+}
