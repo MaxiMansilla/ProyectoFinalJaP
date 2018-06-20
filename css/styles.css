@@ -44,3 +44,18 @@ html, body{
 .container{
 	margin-top:60px;
 }
+#footer{
+	height: 120px;
+	text-align:center;
+}
+#footer_text{
+	display: inline-block;
+	margin-top:90px;
+}
+.section{
+	padding:100px;
+}
+.section:hover{
+	background-color: #007bff;
+	border-radius: 10px;
+}
