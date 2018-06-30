@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mi página personal</title>
+		<title>Home</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
-	<body>
+	<body data-spy="scroll" data-scroll="#menu">
 		<header>
-			<nav id="navbar" class="navbar navbar-dark">
-					<div class="row">
-						<div class="col-xs-12 col-sm-8">
-							<a id="navbar-title" class="navbar-brand" href="index.html"><img src="images/logo.jpg"></a>
-						</div>
-						<div class="col-xs-12 col-sm-4">		 
-						<span><a class="nav-list" href="#">Acerca de mí</a></span>
-						<span><a class="nav-list" href="#">Contacto</a></span>
-					</div>
-				</div>	
+			<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			  <a class="navbar-brand" href="#">Maximiliano Mansilla</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto nav-pills">
+				  <li class="nav-item">
+				    <a class="nav-link scroll active" href="#section_one">Acerca de mí</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link scroll" href="#section_two">About me</a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link scroll" href="#section_three">Contacto</a>
+				  </li>
+			    </ul>
+			  </div>
 			</nav>
 		</header>
 		<div class="container">
@@ -44,33 +52,33 @@
 			</div>
 			<hr>
 			<div id="section_three" class="section">				
-						<h2>Contacto</h2>
-						<form>
-						  <div class="form-group">
-							  <label for="formGroupExampleInput">Nombre:</label>
-							  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre/ Enter your name">
-						  </div>
-						  <div class="form-group">
-							  <label for="formGroupExampleInput2">Apellido:</label>
-							  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese su apellido / Enter your surname">
-						  </div>
-						  <div class="form-group">
-							  <label for="formGroupExampleInput">Número:</label>
-							  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su número/ Enter your cell phone number">
-						  </div>
-						  <div class="form-group">
-							  <label for="formGroupExampleInput">Email:</label>
-							  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su E-mail/ Enter your E-mail">
-						  </div>
-						  <button type="submit" class="btn btn-primary">Enviar</button>
-						</form>						
+				<h2>Contacto</h2>
+				<form action="https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy" method="POST">
+				  <div class="form-group">
+					  <label for="formGroupExampleInput">Nombre:</label>
+					  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre/ Enter your name">
+				  </div>
+				  <div class="form-group">
+					  <label for="formGroupExampleInput2">e-mail</label>
+					  <input type="text" class="form-control" id="email" placeholder="Ingrese su e-mail / Enter your e-mail">
+				  </div>
+				  <div class="form-group">
+					  <label for="formGroupExampleInput">Asunto:</label>
+					  <input type="text" class="form-control" id="asunto" placeholder="Asunto / Subject">
+				  </div>
+				  <div class="form-group">
+					  <label for="formGroupExampleInput">Mensaje</label>
+					  <textarea class="form-control" rows="4" id="mensaje"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary">Enviar</button>
+				</form>						
 			</div>
 		</div>
 		</div>
 		<footer id="footer">
 			<span id="footer_text">Maximimiliano Mansilla 2018 | Design by me</span>
 		</footer>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script src="js/script.js" type="text/javascript"></script>
