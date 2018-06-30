@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}, )
 	});
 
-	/*("form").submit(function(event){
+	("form").submit(function(event){
 		event.preventDefault();
 		$.ajax({
 	    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
@@ -26,9 +26,9 @@ $(document).ready(function(){
 	    	$("#email").val(""),
 	    	$("#asunto").val(""),
 	    	$("#mensaje").val(""),
-			alert('Mensaje enviado con éxito, en breve me estaré comunicando!')
+			alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
 		}).fail(function(){
-			alert('Error de mensaje, vuelve a intentarlo mas tarde!')
+			alert('Error de mensaje, vuelve a intentarlo mas tarde!');
 		})
-	});*/
+	});
 });
