@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}, )
 	});
 
-	("form").submit(function(event){
+	("#form").submit(function(event){
 		event.preventDefault();
 		$.ajax({
 	    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
