@@ -53,15 +53,11 @@ html, body{
 	margin-right: 15%;
 }
 #footer{
-	height: 120px;
+	height: 50px;
 	text-align:center;
 }
-#footer_text{
-	display: inline-block;
-	margin-top:90px;
-}
 .section{
-	padding:100px;
+	padding:15px;
 }
 .section:hover{
 	border-radius: 10px;
