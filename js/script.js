@@ -34,6 +34,18 @@ $(document).ready(function(){
 			event.preventDefault();
 			if($("#nombre").val().length == 0 || $("#email").val().length == 0 || $("#asunto").val().length == 0 || $("#mensaje").val().length == 0){
 				$('#mensajeAlerta').fadeIn();
+				if ($("#nombre").val().length == 0) {
+					$("#nombre").addClass("form-error");	
+				}
+				if ($("#email").val().length == 0) {
+					$("#email").addClass("form-error");	
+				}
+				if ($("#asunto").val().length == 0) {
+					$("#asunto").addClass("form-error");	
+				}
+				if ($("#mensaje").val().length == 0) {
+					$("#mensaje").addClass("form-error");	
+				}				
 			}
 			else{			
 				$.ajax({
@@ -53,6 +65,18 @@ $(document).ready(function(){
 			    	$("#mensaje").val(""),
 					alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
 					$('#mensajeAlerta').fadeOut();
+					if($("#nombre").hasClass("form-error")){
+						$("#nombre").removeClass("form-error")
+					}
+					if($("#email").hasClass("form-error")){
+						$("#email").removeClass("form-error")
+					}			
+					if($("#asunto").hasClass("form-error")){
+						$("#asunto").removeClass("form-error")
+					}
+					if($("#mensaje").hasClass("form-error")){
+						$("#mensaje").removeClass("form-error")
+					}							
 				}).fail(function(){
 					alert('Error de mensaje, vuelve a intentarlo mas tarde!');
 				});

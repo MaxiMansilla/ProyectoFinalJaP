@@ -68,3 +68,6 @@ html, body{
 	font-size: 12px;
 }
 
+.form-error{
+	border-color:#ff2348;
+}
