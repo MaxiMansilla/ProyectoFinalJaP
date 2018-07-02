@@ -52,6 +52,7 @@ $(document).ready(function(){
 			    	$("#asunto").val(""),
 			    	$("#mensaje").val(""),
 					alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
+					$('#mensajeAlerta').fadeOut();
 				}).fail(function(){
 					alert('Error de mensaje, vuelve a intentarlo mas tarde!');
 				});
