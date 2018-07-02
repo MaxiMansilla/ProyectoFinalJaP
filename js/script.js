@@ -1,7 +1,3 @@
-var nombre = $("#nombre").val();
-var email = $("#email").val();
-var asunto = $("#asunto").val();
-var mensaje = $("#mensaje").val();
 $(document).ready(function(){
 
 	var ScrollLink = $('.scroll')
@@ -12,22 +8,29 @@ $(document).ready(function(){
 			scrollTop: $(this.hash).offset().top
 		}, )
 	});
+	$('#nombre').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#email').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#asunto').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#mensaje').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
-			if(nombre == ""){
-				$("#mensajeAlerta").fadeIn();
-				}
-			else if(email == ""){
-				$("#mensajeAlerta").fadeIn();
-			}
-			else if(asunto == ""){
-				$("#mensajeAlerta").fadeIn();
-			}
-			else if(mensaje == ""){
-				$("#mensajeAlerta").fadeIn();
-			}
-			else{
 			$.ajax({
 		    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
 		    method: "POST",
@@ -46,9 +49,7 @@ $(document).ready(function(){
 				alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
 			}).fail(function(){
 				alert('Error de mensaje, vuelve a intentarlo mas tarde!');
-			});
-			$("#mensajeAlerta").fadeOut();
-			}
+			})
 		});
 	});
 });
