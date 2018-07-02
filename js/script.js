@@ -33,7 +33,7 @@ $(document).ready(function(){
 		$("form").submit(function(event){
 			event.preventDefault();
 			var valNombre = $("#nombre").val();
-			if(valNombre.val().lenght == 0){
+			if(valNombre.lenght() == 0){
 				$('#mensajeAlerta').fadeIn();
 			}
 			else{			
