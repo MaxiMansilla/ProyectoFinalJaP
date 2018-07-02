@@ -62,5 +62,9 @@ html, body{
 .section:hover{
 	border-radius: 10px;
 }
-
+#mensajeAlerta{
+	display: none;
+	color: #ff0c31;
+	font-size: 12px;
+}
 

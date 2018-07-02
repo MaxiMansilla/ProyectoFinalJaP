@@ -1,3 +1,7 @@
+var nombre = $("#nombre").val();
+var email = $("#email").val();
+var asunto = $("#asunto").val();
+var mensaje = $("#mensaje").val();
 $(document).ready(function(){
 
 	var ScrollLink = $('.scroll')
@@ -11,6 +15,10 @@ $(document).ready(function(){
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
+			if(nombre == "" || email == "" || asunto == "" || mensaje == ""){
+				$("#mensajeAlerta").fadeIn();
+				}
+			else{
 			$.ajax({
 		    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
 		    method: "POST",
@@ -30,6 +38,8 @@ $(document).ready(function(){
 			}).fail(function(){
 				alert('Error de mensaje, vuelve a intentarlo mas tarde!');
 			});
+			$("#mensajeAlerta").fadeOut();
+			}
 		});
 	});
 });
