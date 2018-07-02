@@ -8,7 +8,7 @@ $(document).ready(function(){
 			scrollTop: $(this.hash).offset().top
 		}, )
 	});
-	$('#nombre').focusout(function(){
+/*	$('#nombre').focusout(function(){
 		if($(this).val().length == 0){
 			$('#mensajeAlerta').fadeIn();
 		}
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		if($(this).val().length == 0){
 			$('#mensajeAlerta').fadeIn();
 		}
-	});
+	}); */
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
