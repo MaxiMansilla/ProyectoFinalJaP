@@ -8,7 +8,7 @@ $(document).ready(function(){
 			scrollTop: $(this.hash).offset().top
 		}, )
 	});
-	$('#nombre').focusout(function(){
+/*	$('#nombre').focusout(function(){
 		if($(this).val().length == 0){
 			$('#mensajeAlerta').fadeIn();
 		}
@@ -27,30 +27,35 @@ $(document).ready(function(){
 		if($(this).val().length == 0){
 			$('#mensajeAlerta').fadeIn();
 		}
-	});
+*/	});
 
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
-			$.ajax({
-		    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
-		    method: "POST",
-		    data:{
-		    	nombre: $("#nombre").val(),
-		    	email: $("#email").val(),
-		    	asunto: $("#asunto").val(),
-		    	mensaje: $("#mensaje").val(),
-			},
-		    dataType: "json"
-			}).done(function(){
-				$("#nombre").val(""),
-		    	$("#email").val(""),
-		    	$("#asunto").val(""),
-		    	$("#mensaje").val(""),
-				alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
-			}).fail(function(){
-				alert('Error de mensaje, vuelve a intentarlo mas tarde!');
-			});
+			var valNombre = $("#nombre").val();
+			if(valNombre.val().lenght == 0){
+				$('#mensajeAlerta').fadeIn();
+			}
+			else{			
+				$.ajax({
+			    url: "https://formspree.io/maximiliano.mansilla@estudiante.ceibal.edu.uy", 
+			    method: "POST",
+			    data:{
+			    	nombre: $("#nombre").val(),
+			    	email: $("#email").val(),
+			    	asunto: $("#asunto").val(),
+			    	mensaje: $("#mensaje").val(),
+				},
+			    dataType: "json"
+				}).done(function(){
+					$("#nombre").val(""),
+			    	$("#email").val(""),
+			    	$("#asunto").val(""),
+			    	$("#mensaje").val(""),
+					alert('Mensaje enviado con éxito, en breve me estaré comunicando!');
+				}).fail(function(){
+					alert('Error de mensaje, vuelve a intentarlo mas tarde!');
+				});
+			}
 		});
 	});
-});
