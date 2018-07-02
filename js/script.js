@@ -8,6 +8,27 @@ $(document).ready(function(){
 			scrollTop: $(this.hash).offset().top
 		}, )
 	});
+	$('#nombre').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#email').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#asunto').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+	$('#mensaje').focusout(function(){
+		if($(this).val().length == 0){
+			$('#mensajeAlerta').fadeIn();
+		}
+	});
+
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
