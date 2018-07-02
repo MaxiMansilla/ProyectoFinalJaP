@@ -32,7 +32,7 @@ $(document).ready(function(){
 	$(function($){
 		$("form").submit(function(event){
 			event.preventDefault();
-			if($("#nombre").val().length == 0 || $("#email").val().length == 0 || $("#asunto").val().length == 0 || $("#mensaj").val().length == 0){
+			if($("#nombre").val().length == 0 || $("#email").val().length == 0 || $("#asunto").val().length == 0 || $("#mensaje").val().length == 0){
 				$('#mensajeAlerta').fadeIn();
 			}
 			else{			
