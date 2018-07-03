@@ -1,40 +1,28 @@
 html, body{
 	margin:0;
 	height: 100%;
-	position: relative;
 }
-#navbar{
-	background-color:#3a3a34;
-	padding: 0;
+
+.container-fluid{
+	background-color: #dddddd59
 }
-#navbar-title{
-	color:#000;
+.container{
+	background-color: #fff;
 }
 .row{
 	width: 100%;
 }
-
-.nav-list{
-	font-weight: 200;
-	color:#573ef7;
-	display: inline-block;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	padding-right:10%;
-	padding-left: 10%;
-	transition-delay: 0.09s;
-}
-
-.nav-list:hover{
-	color: white;
-	background-color:#6e9cd3;
-	text-decoration: none;
-}
-
 .jumbotron{
 	height: 100%;
 	margin-bottom: 0px;
 	background-image: url(../images/jumbotron_bg.png);
+}
+.nav-link{
+	font-family: Brandon Text,sans-serif;
+	font-weight: 700;
+	word-spacing: .01em;
+	letter-spacing: .0001em;
+	font-size: 14px;
 }
 .welcome_title{
 	font-size: 56px;
@@ -67,7 +55,22 @@ html, body{
 	color: #ff0c31;
 	font-size: 12px;
 }
-
 .form-error{
 	border-color:#ff2348;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: #4c5864;
+}
+footer{
+	background-color: #212529;
+}
+.footer-list{
+	color: #e2e1e166;
+	list-style: none;
+	font-family: Brandon Text,sans-serif;
+	font-weight: 700;
+	word-spacing: .01em;
+	font-size: 14px;
+	text-align:right;
 }
