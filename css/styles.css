@@ -11,7 +11,7 @@ body::-webkit-scrollbar-thumb{
 	border-radius: 4px; 
 }
 .container-fluid{
-	background-color: #dddddd59
+	background-color: #dddddd59;
 }
 .container_home{
 	background-color: #fff;
@@ -52,10 +52,16 @@ body::-webkit-scrollbar-thumb{
 	text-align:center;
 }
 .section{
-	padding:15px;
+	padding-top:70px;
 }
 .section:hover{
 	border-radius: 10px;
+}
+.btn-primary{
+	background-color: #212529;
+}
+.btn-primary:hover{
+	background-color: #212529;	
 }
 #mensajeAlerta{
 	display: none;
