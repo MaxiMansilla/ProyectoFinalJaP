@@ -60,6 +60,9 @@ body::-webkit-scrollbar-thumb{
 .section{
 	padding-top:70px;
 }
+#section_two{
+	margin:0;
+}
 .section:hover{
 	border-radius: 10px;
 }
@@ -89,8 +92,9 @@ footer{
 }
 #frase{
 	width: 100%;
+	padding: 10%;
 	min-height:500px;
-	background-color:#c9defc;
+	background-color:#373c44;
 	color: #fff;
     display: flex;
     justify-content: center;
@@ -100,9 +104,7 @@ footer{
     font-size: 40px;
     font-family: serif;
 }
-.question{
-	font-size: 24px;
-}
+
 #galeria ul{
 	list-style:none;
 	display: flex;
@@ -111,4 +113,14 @@ footer{
 }
 #galeria img{
 	width:150px;
+}
+.introduction{
+	text-align: center;
+}
+.question{
+	width: 90%;
+}
+.answer{
+	width: 78%;
+	text-align: center;
 }
