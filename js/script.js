@@ -9,8 +9,8 @@ function myFunction() {
   }
 }
 $(document).ready(function(){
-		var ScrollLink = $('.scroll')
-		ScrollLink.click(function(e) {
+	var ScrollLink = $('.scroll')
+	ScrollLink.click(function(e) {
 			e.preventDefault()
 			$('body,html').animate({
 				scrollTop: $(this.hash).offset().top
@@ -20,6 +20,10 @@ $(document).ready(function(){
 			$('#logo_link').toggleClass('fadeIn');
 		});
 	});
+
+$("#jumbotron-boton").click(function(){
+	$("#acercaDeMi").click();
+})
 
 	$(function($){
 		$("form").submit(function(event){
