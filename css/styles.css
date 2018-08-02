@@ -118,9 +118,18 @@ footer{
 	text-align: center;
 }
 .question{
-	width: 90%;
+	background-color: #373c44;
+	color: #fff;
+	border-color: #373c44;
 }
+
 .answer{
-	width: 78%;
+	width: 100%;
+	padding: 10%;
 	text-align: center;
+	color: #fff;
+	background: linear-gradient(#373c44,#566e94);
+}
+.iconos{
+	width: 70%;
 }
