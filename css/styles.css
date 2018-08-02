@@ -19,9 +19,6 @@ body::-webkit-scrollbar-thumb{
 .container-fluid{
 	background-color: #dddddd59;
 }
-.container_home{
-	background-color: #fff;
-}
 .row{
 	width: 100%;
 }
@@ -132,4 +129,7 @@ footer{
 }
 .iconos{
 	width: 70%;
+}
+.subtitle{
+	text-align: center;
 }
