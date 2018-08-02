@@ -27,6 +27,17 @@ body::-webkit-scrollbar-thumb{
 	margin-bottom: 0px;
 	background-image: url(../images/jumbotron_bg.png);
 }
+.navbar{
+	z-index: 1000;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
 .nav-link{
 	font-family: Brandon Text,sans-serif;
 	font-weight: 700;
