@@ -10,6 +10,17 @@ body::-webkit-scrollbar-thumb{
 	background:#fff;
 	border-radius: 4px; 
 }
+#myHeader{
+	background-color: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 2px solid #d6d6d6;
+}
+.img{
+	padding-left: 5%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
 .btn{
 	color: #fff;
 }
@@ -39,6 +50,7 @@ body::-webkit-scrollbar-thumb{
   padding-top: 102px;
 }
 .nav-link{
+	color: #000;
 	font-family: Brandon Text,sans-serif;
 	font-weight: 700;
 	word-spacing: .01em;
@@ -84,7 +96,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-	background-color: #4c5864;
+	background:transparent;
 }
 footer{
 	background-color: #212529;
@@ -99,18 +111,8 @@ footer{
 	text-align:right;
 }
 #frase{
-	width: 100%;
-	padding: 10%;
-	min-height:500px;
-	background-color:#373c44;
-	color: #fff;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 40px;
-    font-family: serif;
+	font-family: serif;
+	font-size: 20px;	
 }
 
 #galeria ul{
@@ -130,7 +132,6 @@ footer{
 	color: #fff;
 	border-color: #373c44;
 }
-
 .answer{
 	width: 100%;
 	padding: 10%;
@@ -143,4 +144,66 @@ footer{
 }
 .subtitle{
 	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+}
+.list-sectionOne{
+	list-style: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	color: black;
+}
+.nav-pills .nav-link.active{
+	color:#ff6600;
+	border-bottom: 3px solid #ff6600;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.card{
+	margin-left: 10%;
+	width: 80%;
+}
+.card-tittle{
+	font-size: 22px;
+}
+.link-pdf
+{
+	color:#ff6600;
+}
+.link-pdf:hover{
+	color:#ff6600;
+	text-decoration: none;
+}
+.cardComillas{
+	background-color:#000000c7;
+	color: white;
+}
+.parallax-window {
+ 	background: #2f2f2d70;
+ 	width: 100%;
+    min-height: 500px;
+}
+.parallax-title{
+	text-align: center;
+	color: #fff;
+}
+.parallax-text{
+	text-align: center;
+	color: #fff;
+}
+.service-card{
+	background-color:#00000000;
+	color: #fff;
+}
+.service-img{
+	width:32px;
+}
+#botoncard{
+	color: #fff;
+	background-color: #ff6600;
+	display: inline-block;
+	border-radius: 10px;
+}
+#botoncard:hover{
+	text-decoration: none;
 }
