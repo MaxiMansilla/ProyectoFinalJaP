@@ -38,8 +38,14 @@ body::-webkit-scrollbar-thumb{
 	margin-bottom: 0px;
 	background-image: url(../images/jumbotron_bg.png);
 }
+#jumbotron-boton{
+	background-color: #ff6600;
+}
 .navbar{
 	z-index: 1000;
+}
+.submit{
+	background-color: #ff6600;
 }
 .sticky {
   position: fixed;
@@ -59,7 +65,7 @@ body::-webkit-scrollbar-thumb{
 }
 .welcome_title{
 	font-size: 56px;
-	color: #007bff;
+	color: #ff6600;
 	font-weight: 100;
 }
 .description_jumbotron{
@@ -128,7 +134,7 @@ footer{
 	text-align: center;
 }
 .question{
-	background-color: #373c44;
+	background-color: #ff6600;
 	color: #fff;
 	border-color: #373c44;
 }
@@ -137,10 +143,13 @@ footer{
 	padding: 10%;
 	text-align: center;
 	color: #fff;
-	background: linear-gradient(#373c44,#566e94);
+	background: linear-gradient(#dd9b6f,#ff6600);
 }
 .iconos{
 	width: 70%;
+}
+.icono-septimo{
+	width: 62%;
 }
 .subtitle{
 	text-align: center;
@@ -206,4 +215,16 @@ footer{
 }
 #botoncard:hover{
 	text-decoration: none;
+}
+#contact-list{
+	list-style:none;
+	text-align: center;
+}
+#section_three{
+	color: #fff;
+	background-color: #fff;
+}
+#contact-wrap{
+	background-image: url(../images/bg_contact.jpg);
+	margin:0;
 }
