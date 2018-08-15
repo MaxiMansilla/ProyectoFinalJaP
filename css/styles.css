@@ -104,6 +104,9 @@ body::-webkit-scrollbar-thumb{
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
 	background:transparent;
 }
+.nav-link:hover{
+	color: #ff6600;
+}
 footer{
 	background-color: #212529;
 }
